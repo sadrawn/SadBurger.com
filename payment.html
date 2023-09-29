@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sad Burger Payment Center</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/payment.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="overview">
+      <div class="h2">
+        <div class="preview">
+          <h2>ORDER OVERVIEW</h2>
+          <p>SadBurger</p>
+        </div>
+      </div>
+      <div class="price">
+        <p>price : <span>00.00</span> <sup>$</sup></p>
+      </div>
+    </div>
+    <!-- row 1  -->
+    <div class="container">
+
+
+      <div class="payment-method row">
+        PLEASE SELECT A PAYMENT METHOD
+      </div>
+      <div class="method row">
+        <ion-icon name="card-outline" id="card-logo"></ion-icon>
+        <a href="#">CREDIT</a> / <a href="#">DEBIT CARD</a>
+      </div>
+      <div class="main-payment-page">
+        <div class="input-center" id="firstname">
+          <div class="info-row">
+            <p>First name</p>
+            <p id="optional">Optional</p>
+          </div>
+          <input type="text" placeholder="firstname">
+        </div>
+        <!-- lastname -->
+        <div class="input-center" id="lastname">
+          <div class="info-row">
+            <p>Last name</p>
+          </div>
+          <input type="text" placeholder="lastname">
+        </div>
+        <!-- card number -->
+        <div class="input-center" id="cardnumber">
+          <div class="info-row">
+            <p>Card Number</p>
+          </div>
+          <input type="text" placeholder="card number">
+        </div>
+        <!-- CVV -->
+        <div class="input-center" id="CVV">
+          <div class="info-row">
+            <p>CVV</p>
+          </div>
+          <input type="text" placeholder="CVV">
+        </div>
+        <div class="bank-cards">
+          <div class="bank-img">
+            <a href="#">
+              <img src="images/mastercard.png" alt="mastercard">
+            </a>
+          </div>
+          <div class="bank-img">
+            <a href="#">
+              <img src="images/uatp.png" alt="uatp">
+            </a>
+          </div>
+          <div class="bank-img">
+            <a href="#">
+              <img src="images/visa.png" alt="uatp">
+            </a>
+          </div>
+        </div>
+        <!-- valid until -->
+        <div class="validate" id="valid-until">
+          <!-- <div class="inforow">
+          <label for="month">Month</label>
+          <div class="select">
+            <select class="month">
+              <optgroup label="month's">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="march">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="Octobor">Octobor</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </optgroup>
+            </select>
+          </div>
+        </div> -->
+          <div class="year">
+            <label for="year">year (MM-DD-YYYY)</label>
+            <input type="date" name="date" value="2022-01-01">
+          </div>
+        </div>
+      </div>
+      <div class="sub-can">
+        <input type="submit" name="submit-btn" value="submit" id="submit">
+        <a href="home.html" target="_top">
+          <input type="reset" name="reset-btn" value="cancle" id="cancle">
+        </a>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
